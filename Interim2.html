@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>February 2026 Calendar (2 Weeks)</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+      background-color: #fff;
+      margin: 0;
+      padding: 20px;
+      color: #000;
+    }
+
+    h1 {
+      text-align: center;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    .calendar {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      border: 3px double #ddd;
+      border-top: none;
+      border-left: none;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .day-header {
+      background: #e8f5e9;
+      text-align: center;
+      font-weight: 600;
+      font-size: 14px;
+      border-top: 3px double #ddd;
+      border-left: 3px double #ddd;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .day-cell {
+      border-top: 3px double #ddd;
+      border-left: 3px double #ddd;
+      padding: 8px;
+      min-height: 200px;
+      vertical-align: top;
+      position: relative;
+    }
+
+    .date-label {
+      font-size: 13px;
+      font-weight: 500;
+      color: #666;
+      margin-bottom: 5px;
+    }
+
+    .event {
+      font-size: 14px;
+      margin: 4px 0;
+      color: #007aff;
+      text-decoration: none;
+      display: block;
+      cursor: pointer;
+    }
+
+    .event:hover {
+      text-decoration: underline;
+    }
+
+    .indented-event {
+      font-size: 14px;
+      margin: 4px 0;
+      color: #007aff;
+      text-decoration: none;
+      display: block;
+      padding-left: 20px;
+      cursor: pointer;
+    }
+
+    .indented-event:hover {
+      text-decoration: underline;
+    }
+
+    .meals,
+    .cost,
+    .cash {
+      font-size: 12px;
+      padding-top: 0px;
+      border-top: 1px solid #eee;
+      margin-top: 8px;
+    }
+
+    .meals {
+      color: #800020;
+    }
+
+    .cost {
+      color: green;
+    }
+
+    .cash {
+      color: black;
+    }
+    }
+  </style>
+  <script>
+    function openEventPopup(url) {
+      const width = 800;
+      const height = 600;
+      const left = (window.innerWidth - width) / 2;
+      const top = (window.innerHeight - height) / 2;
+      
+      window.open(url, 'EventDetails', 
+        `width=${width},height=${height},left=${left},top=${top},
+        resizable=yes,scrollbars=yes,status=yes,location=yes,menubar=yes`);
+    }
+  </script>
+</head>
+<body>
+
+<h1>February 2026 – Two-Week Calendar</h1>
+
+<!-- Day Headers -->
+<div class="calendar">
+  <div class="day-header">Sun</div>
+  <div class="day-header">Mon</div>
+  <div class="day-header">Tue</div>
+  <div class="day-header">Wed</div>
+  <div class="day-header">Thu</div>
+  <div class="day-header">Fri</div>
+  <div class="day-header">Sat</div>
+
+  <!-- Week 1: Feb 1–7 -->
+  <div class="day-cell">
+    <div class="date-label">Feb 1</div>
+    <div style="height: 105px;"></div> <!-- Invisible spacer to push content down -->
+
+
+
+  </div>
+  <div class="day-cell">
+    <div class="date-label">Feb 2</div>
+    <a href="events/feb2a.html" class="event">Drive to DIA</a>
+    <a href="events/feb2b.html" class="indented-event">Parking</a>
+    <a href="events/feb2d.html" class="event">Flight to Munich</a><br><br>
+    <div class="meals">Lunch in Denver, Dinner on the plane</div>
+
+    <div class="cash">$15 for a possible lunch</div>
+  </div>
+  <div class="day-cell">
+    <div class="date-label">Feb 3</div>
+    <a href="events/feb3a.html" class="event">Arrive in Munich and transfer to hostel</a>
+    <a href="events/feb3b.html" class="event">Walking tour of Munich</a><br><br>
+
+    <div class="meals">Lunch on the go, Dinner on the go</div>
+
+
+    <div class="cash">$30 lunch & dinner</div>
+
+  </div>
+  <div class="day-cell">
+    <div class="date-label">Feb 4</div>
+
+    <a href="events/feb4c.html" class="event">Sightseeing and Document Center</a>
+    <a href="events/feb4b.html" class="event">Visit of Dachau</a><br><br>
+    <div class="meals">Breakfast at hostel, Lunch packet, Dinner on the go</div>
+
+
+
+    <div class="cash">$20 dinner</div>
+
+  </div>
+  <div class="day-cell">
+    <div class="date-label">Feb 5</div>
+
+    <a href="events/feb5b.html" class="event">Train to Berlin </a>
+
+    <a href="events/feb5c.html" class="event">Check in at hostel</a>
+    <a href="events/feb5e.html" class="event">Sightseeing Berlin</a><br><br>
+    <div class="meals">Breakfast at hostel, Lunch packet and dinner on the go</div>
+
+ 
+    <div class="cash">$20 dinner</div>
+
+  </div>
+  <div class="day-cell">
+    <div class="date-label">Feb 6</div>
+    <a href="events/feb6a.html" class="event">Breakfast at hostel</a>
+    <a href="events/feb6b.html" class="event">Visit the Jewish Museum</a>
+    <a href="events/feb6c.html" class="event">Bus tour of Berlin</a><br><br>
+    <div class="meals">Breakfast at hostel, Lunch and dinner on the go</div>
+
+
+    <div class="cash">$30 lunch & dinner</div>
+
+  </div>
+  <div class="day-cell">
+    <div class="date-label">Feb 7</div>
+    <a href="events/feb6a.html" class="event">Breakfast at hostel</a>
+    <a href="events/feb7b.html" class="event">Visit Jewish Memorial</a>
+    <a href="events/feb7c.html" class="event">Free time</a><br><br>
+    <div class="meals">Breakfast at hostel, Lunch and dinner on the go</div>
+
+
+    <div class="cash">$30 lunch & dinner</div>
+
+  </div>
+
+  <!-- Week 2: Feb 8–14 -->
+  <div class="day-cell">
+    <div class="date-label">Feb 8</div>
+    <a href="events/feb6a.html" class="event">Breakfast at hostel</a>
+    <a href="events/feb8b.html" class="event">Walking Tour of Jewish life in Berlin</a>
+    <a href="events/feb8c.html" class="event">Visit to the Berlin Wall</a><br><br>
+    <div class="meals">Breakfast at hostel, Lunch and dinner on the go</div>
+
+
+    <div class="cash">$30 lunch & dinner</div>
+
+  </div>
+  <div class="day-cell">
+    <div class="date-label">Feb 9</div>
+    <a href="events/feb6a.html" class="event">Breakfast at hostel</a>
+    <a href="events/feb9b.html" class="event">Take train to Kraków</a>
+    <a href="events/feb9c.html" class="event">Check in at hotel and dinner</a><br><br>
+    <div class="meals">Breakfast at hostel, Lunch on the train, dinner in Kraków</div>
+
+
+    <div class="cash">$30 lunch & dinner</div>
+
+  </div>
+  <div class="day-cell">
+    <div class="date-label">Feb 10</div>
+    <a href="events/feb10a.html" class="event">Breakfast at hotel</a>
+    <a href="events/feb10b.html" class="event">Visit Auschwitz</a>
+    <a href="events/feb10c.html" class="event">Dinner on your own</a><br><br><br>
+
+    <div class="meals">Breakfast at hostel, Lunch on the go, Dinner on the go</div>
+
+
+    <div class="cash">$30 lunch & dinner</div>
+
+  </div>
+  <div class="day-cell">
+    <div class="date-label">Feb 11</div>
+    <a href="events/feb10a.html" class="event">Breakfast at hotel</a>
+    <a href="events/feb11b.html" class="event">Visit Kazimierz, Krakow's Historic Jewish Quarter</a>
+    <a href="events/feb11c.html" class="event">Visit Schindler's Factory</a>  
+    <a href="events/feb11d.html" class="event">Dinner</a>  <br>
+    <div class="meals">Breakfast at hostel, Lunch on the go, Dinner on the go</div>
+
+
+    <div class="cash">$30 lunch & dinner</div>
+
+
+  </div>
+  <div class="day-cell">
+    <div class="date-label">Feb 12</div>
+    <a href="events/feb12a.html" class="event">Shuttle to Airport</a>
+    <a href="events/feb12b.html" class="event">Return flight to Denver</a>
+    <a href="events/feb12c.html" class="event">Drive to CRMS</a><br><br><br>
+
+    <div class="meals">Breakfast and lunch at Airport, Dinner in Denver</div>
+    
+
+    <div class="cash">$60 breakfast, lunch & dinner</div>
+    
+  </div>
+  <div class="day-cell">
+    <div class="date-label">Feb 13</div>
+    <a href="events/feb13a.html" class="event">Presentation</a>
+
+  </div>
+  <div class="day-cell">
+    <div class="date-label">Feb 14</div>
+  </div>
+</div>
+
+</body>
+</html>
